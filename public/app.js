@@ -5,8 +5,8 @@ let sample = (array) => {
 }
 
 let regenerateGreeting = () => {
-  alert(sample(greetingsArray))
-  regenerateGreeting()
+  // alert(sample(greetingsArray))
+  // regenerateGreeting()
 }
 
 regenerateGreeting()
