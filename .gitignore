@@ -1,0 +1,5 @@
+/.bundle
+.env
+
+/public/bundle.js
+/node_modules
