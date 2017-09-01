@@ -5,7 +5,11 @@ let sample = (array) => {
   return array[Math.floor(Math.random() * array.length)]
 }
 
+// selectDifferent
+
+
 let output = '';
+
 
 // if gratuitous - set timeout
 

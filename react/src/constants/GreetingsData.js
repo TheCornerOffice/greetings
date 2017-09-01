@@ -13,4 +13,4 @@ const GreetingsData = {
   ]
 }
 
-export default GreetingsData
+export default GreetingsData;
