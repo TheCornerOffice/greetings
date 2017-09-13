@@ -1,10 +1,10 @@
 const GreetingsData = {
   greetings: [
-    "hi",
-    "hello",
-    "how are you?",
-    "hey",
-    "what's up?"
+    "Hi",
+    "Hello",
+    "How are you?",
+    "Hey",
+    "What's up?"
   ],
   modifiers: [
     "Nice weather, isn't it?",

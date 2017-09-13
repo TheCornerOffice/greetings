@@ -1,11 +1,14 @@
-import React, { Component } from 'react';
-import { greetingFunc1 } from './GreetingGenerator'
+import React from 'react';
 
 const GreetingsList = props => {
+  let greetingsList = props.greetings.map(greeting => {
+    return <li key={Math.random()}>{greeting}</li>
+  })
+
   return(
-    <h1>
-      {greetingFunc1()}
-    </h1>
+    <ul>
+      {greetingsList}
+    </ul>
   )
 }
 

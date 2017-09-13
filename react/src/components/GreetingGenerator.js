@@ -1,15 +1,53 @@
 import React from 'react';
-import GreetingsData from '../constants/GreetingsData'
 
-let sample = (array) => {
+const FAST = 300
+const MEDIUM = 800
+const SLOW = 1500
+
+const GreetingsData = {
+  greetings: [
+    "Hi",
+    "Hello",
+    "How are you?",
+    "Hey",
+    "What's up?"
+  ],
+  modifiers: [
+    "Nice weather, isn't it?",
+    "That's a great tie",
+    "Well ain't that dandy?"
+  ]
+}
+
+
+let sample = array => {
   return array[Math.floor(Math.random() * array.length)]
 }
 
-// selectDifferent
+let selectDifferent = (array, current = null) => {
+  value = sample(array)
+  if (value === current) {
+    return selectDifferent(array, current)
+  } else {
+    return value
+  }
+}
 
+let generateGreeting = ({ gratuitous, garrulous, gregarious}) => {
+  let initialOutput = selectDifferent()
+}
 
-let output = '';
-
+// greetings
+//
+// let generateGreeting = (gratuitous, garrulous, gregarious) => {
+//   let initialOutput = selectDifferent(GreetingsData.greetings)
+//
+//   if (gratuitous) {
+//     setInterval(() => {
+//
+//     })
+//   }
+// }
 
 // if gratuitous - set timeout
 
